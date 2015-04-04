@@ -1,6 +1,8 @@
 -- This is the main Lua script of your project.
 -- See the Lua API! http://www.solarus-games.org/solarus/documentation/
 
+local game_manager = require("scripts/game_manager")
+
 function sol.main:on_started()
 
   -- Setting a language is useful to display text and dialogs.
@@ -12,13 +14,8 @@ function sol.main:on_started()
   sol.menu.start(self, solarus_logo)
   solarus_logo.on_finished = function()
     
-	local save_exists = sol.game.exists("save1.dat")
-	local game = sol.game.load("save1.dat")
+	local game = game_manager:create("save1.dat")
 	
-	if not exists then
-		game:set_starting_location("house_outside", "mailbox")
-	end
-
 	game:start()
 
   end
