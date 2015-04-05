@@ -1254,6 +1254,16 @@ jumper{
   jump_length = 24,
 }
 
+teletransporter{
+  layer = 0,
+  x = 104,
+  y = 168,
+  width = 16,
+  height = 16,
+  destination_map = "training_cave/cave_b1",
+  destination = "hole_landing",
+}
+
 tile{
   layer = 1,
   x = -8,

@@ -3,6 +3,8 @@ map{ id = "_inside_store", description = "_Inside_Store" }
 map{ id = "_outside_store", description = "_Outside_Store" }
 map{ id = "house_inside", description = "Link's House Inside" }
 map{ id = "lanyru_canyon", description = "Lanyru Canyon" }
+map{ id = "training_cave/cave_entrance", description = "Cave Entrance" }
+map{ id = "training_cave/cave_b1", description = "Cave Basement 1" }
 
 tileset{ id = "cave", description = "Cave" }
 tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }

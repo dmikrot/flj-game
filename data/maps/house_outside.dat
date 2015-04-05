@@ -1452,7 +1452,7 @@ tile{
   x = 504,
   y = 40,
   width = 16,
-  height = 32,
+  height = 40,
   pattern = "ladder",
 }
 
@@ -1461,7 +1461,7 @@ tile{
   x = 496,
   y = 40,
   width = 8,
-  height = 32,
+  height = 40,
   pattern = "ladder.border.1",
 }
 
@@ -1470,17 +1470,8 @@ tile{
   x = 520,
   y = 40,
   width = 8,
-  height = 32,
+  height = 40,
   pattern = "ladder.border.2",
-}
-
-tile{
-  layer = 0,
-  x = 504,
-  y = 72,
-  width = 16,
-  height = 24,
-  pattern = "pontoon",
 }
 
 tile{
@@ -1654,19 +1645,10 @@ tile{
   pattern = "grass.cliff.top.border.1",
 }
 
-tile{
-  layer = 0,
-  x = 512,
-  y = 136,
-  width = 8,
-  height = 8,
-  pattern = "grass.shadow.diag.3",
-}
-
 destination{
   layer = 0,
-  x = 192,
-  y = 317,
+  x = 264,
+  y = 277,
   name = "mailbox",
   direction = 1,
 }
@@ -1927,16 +1909,8 @@ wall{
 
 destructible{
   layer = 0,
-  x = 104,
-  y = 101,
-  sprite = "entities/stone_white",
-  weight = 1,
-}
-
-destructible{
-  layer = 0,
-  x = 512,
-  y = 109,
+  x = 504,
+  y = 93,
   sprite = "entities/stone_black",
   weight = 2,
 }
@@ -2012,22 +1986,31 @@ teletransporter{
   destination = "_side",
 }
 
-tile{
-  layer = 1,
+destructible{
+  layer = 0,
   x = 520,
-  y = 72,
-  width = 8,
-  height = 24,
-  pattern = "pontoon.border.2",
+  y = 93,
+  sprite = "entities/stone_black",
+  weight = 2,
 }
 
-tile{
-  layer = 1,
-  x = 496,
-  y = 72,
-  width = 8,
-  height = 24,
-  pattern = "pontoon.border.1",
+destination{
+  layer = 0,
+  x = 104,
+  y = 53,
+  name = "cave_exit",
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 96,
+  y = 24,
+  width = 16,
+  height = 16,
+  name = "cave_entrance",
+  destination_map = "training_cave/cave_entrance",
+  destination = "cave_entrance",
 }
 
 tile{
