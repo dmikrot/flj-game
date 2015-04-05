@@ -1636,6 +1636,24 @@ tile{
   pattern = "grass.barrier",
 }
 
+tile{
+  layer = 0,
+  x = 544,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "cliff.top.border.1",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "grass.cliff.top.border.1",
+}
+
 destination{
   layer = 0,
   x = 192,
@@ -1971,6 +1989,17 @@ teletransporter{
   height = 16,
   sound = "door_open",
   destination_map = "house_inside",
+}
+
+teletransporter{
+  layer = 0,
+  x = 544,
+  y = 0,
+  width = 16,
+  height = 384,
+  transition = "scrolling",
+  destination_map = "lanyru_canyon",
+  destination = "_side",
 }
 
 tile{
