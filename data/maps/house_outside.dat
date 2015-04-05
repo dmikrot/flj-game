@@ -1654,6 +1654,15 @@ tile{
   pattern = "grass.cliff.top.border.1",
 }
 
+tile{
+  layer = 0,
+  x = 512,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "grass.shadow.diag.3",
+}
+
 destination{
   layer = 0,
   x = 192,
