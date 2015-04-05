@@ -1,4 +1,6 @@
 map{ id = "house_outside", description = "Link's House" }
+map{ id = "_inside_store", description = "_Inside_Store" }
+map{ id = "_outside_store", description = "_Outside_Store" }
 
 tileset{ id = "cave", description = "Cave" }
 tileset{ id = "dungeon_blue", description = "Dungeon (blue)" }
