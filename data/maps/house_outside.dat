@@ -1843,6 +1843,7 @@ chest{
   x = 88,
   y = 229,
   treasure_name = "sword",
+  treasure_savegame_variable = "sword_1_chest",
   sprite = "entities/chest",
 }
 
