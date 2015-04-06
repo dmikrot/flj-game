@@ -3,6 +3,7 @@ properties{
   y = 0,
   width = 800,
   height = 384,
+  world = "overworld",
   tileset = "light_world",
   music = "overworld",
 }

@@ -3,7 +3,7 @@ properties{
   y = 0,
   width = 320,
   height = 240,
-  world = "training_cave",
+  world = "dungeon_1",
   floor = 0,
   tileset = "cave",
   music = "cave",
