@@ -571,6 +571,8 @@ destructible{
   layer = 0,
   x = 880,
   y = 405,
+  treasure_name = "rupee",
+  treasure_variant = 2,
   sprite = "entities/vase",
   destruction_sound = "stone",
 }
@@ -607,6 +609,7 @@ destructible{
   layer = 0,
   x = 720,
   y = 405,
+  treasure_name = "rupee",
   sprite = "entities/vase",
   destruction_sound = "stone",
 }
