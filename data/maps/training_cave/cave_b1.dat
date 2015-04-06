@@ -1771,7 +1771,7 @@ stairs{
 door{
   layer = 1,
   x = 792,
-  y = 152,
+  y = 200,
   name = "door2_top",
   direction = 3,
   sprite = "entities/door_small_key",
