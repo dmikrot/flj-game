@@ -1,106 +1,2249 @@
--- ---------
--- Treasures
--- ---------
---
--- Dialogus shown when the hero obtains a treasure.
+-- English dialogs
 
---------------------
--- Shield
+-- ****** Contributors ******
+-- Please add your name to this list if you helped.
+-- These names will appear in the English localization credits
+-- at the end of the game.
+-- * Donovan Mikrot
+
+-- ****** Please respect the limit of each line! ******
+-- 23 chars for normal lines,
+-- 20 chars for dialogs with an icon or lines that are answers to a question,
+-- 17 chars for lines with both an icon and an answer.
+-- Each dialog ends with a comment with dashes indicating the maximum line size.
+-- Please don't exceed the maximum size of lines,
+-- and don't break lines too early either.
+-- Don't try to reproduce the exact same lines: it's normal for dialogs to be
+-- shorter or longer than in the language you are translating from.
+-- It's also normal for lines to end on different words.
+
+
+-- Plume / Feather
 dialog{
-  id = "_treasure.shield.1",
+  id = "_item_description.feather.1",
+  icon = 0,
+  skip = "all",
   text = [[
-You found the Shield!
-
-You can defend yourself from enemy attacks!
+Use the Feather to
+jump over obstacles.
 ]]
 }
 --------------------
 
--- Fire Shield
+-- Bombes / Bombs
 dialog{
-  id = "_treasure.shield.2",
+  id = "_item_description.bombs_counter.1",
+  icon = 1,
+  skip = "all",
   text = [[
-You found the Fire Shield!
-
-You are now protected from fire attacks!
+Use Bombs against
+enemies and to
+destroy obstacles.
 ]]
 }
 --------------------
 
--- Mirror Shield
+-- Arc / Bow
 dialog{
-  id = "_treasure.shield.3",
+  id = "_item_description.bow.1",
+  icon = 2,
+  skip = "all",
   text = [[
-You found the Mirror Shield!
-
-You can now reflect lasers!
+You don't have any
+Arrows left!
 ]]
 }
 --------------------
 
--- Sword 1
+-- Arc & Flèches / Bow & Arrows
 dialog{
-  id = "_treasure.sword.1",
+  id = "_item_description.bow.2",
+  icon = 3,
+  skip = "all",
   text = [[
-You found the Sword of Courage!
-
-Use it to vanquish your enemies!
+Shoot Arrows to
+defeat tough
+enemies.
 ]]
 }
 --------------------
 
--- Sword 2
+-- Boomerang
 dialog{
-  id = "_treasure.sword.2",
+  id = "_item_description.boomerang.1",
+  icon = 4,
+  skip = "all",
   text = [[
-$1You found the Hylian Blade!
-This blade is twice as powerful as your old one!
+Use the Boomerang to
+immobilize enemies
+and pick up far-away
+objects.
+]]
+}
+--------------------
+
+-- Super Boomerang
+dialog{
+  id = "_item_description.boomerang.2",
+  icon = 35,
+  skip = "all",
+  text = [[
+Use the Super
+Boomerang to
+immobilize enemies
+and pick up far-away
+objects.
+]]
+}
+--------------------
+
+-- Lanterne / Lamp
+dialog{
+  id = "_item_description.lamp.1",
+  icon = 5,
+  skip = "all",
+  text = [[
+Brighten dark places
+and light torches
+with the Lamp, but
+watch your Magic
+Meter!
+]]
+}
+--------------------
+
+-- Grappin / Hookshot
+dialog{
+  id = "_item_description.hookshot.1",
+  icon = 6,
+  skip = "all",
+  text = [[
+Hoist yourself up to
+inaccessible places
+with the help of the
+Hookshot.
+]]
+}
+--------------------
+
+-- Flacon Magique vide / Empty bottle
+dialog{
+  id = "_item_description.bottle_1.1",
+  icon = 7,
+  skip = "all",
+  text = [[
+The Magic Bottle can
+hold various
+substances.
+]]
+}
+--------------------
+
+-- Eau dans Flacon / Water in Bottle
+--#Second part may need changing
+dialog{
+  id = "_item_description.bottle_1.2",
+  icon = 8,
+  skip = "all",
+  text = [[
+Your Magic Bottle
+is filled with
+water.
+Use it at an
+appropriate spot...
+]]
+}
+--------------------
+
+-- Potion rouge / Red potion
+dialog{
+  id = "_item_description.bottle_1.3",
+  icon = 9,
+  skip = "all",
+  text = [[
+Drink the Red Potion
+to fill up your
+Heart Meter.
+]]
+}
+--------------------
+
+-- Potion verte / Red potion
+dialog{
+  id = "_item_description.bottle_1.4",
+  icon = 10,
+  skip = "all",
+  text = [[
+Drink the Green Potion
+to fill up your
+Magic Meter.
+]]
+}
+--------------------
+
+-- Potion bleue / Red potion
+dialog{
+  id = "_item_description.bottle_1.5",
+  icon = 11,
+  skip = "all",
+  text = [[
+Drink the Blue Potion
+to fill up both your
+Heart and Magic
+Meters!
+]]
+}
+--------------------
+
+-- Fée dans Flacon / Fairy in Bottle
+dialog{
+  id = "_item_description.bottle_1.6",
+  icon = 12,
+  skip = "all",
+  text = [[
+This Fairy will help
+you in time of need.
+You can also use it
+whenever you want to
+recover your Hearts!
+]]
+}
+--------------------
+
+-- Flacon Magique vide / Empty bottle
+dialog{
+  id = "_item_description.bottle_2.1",
+  icon = 7,
+  skip = "all",
+  text = [[
+The Magic Bottle can
+hold various
+substances.
+]]
+}
+--------------------
+
+-- Eau dans Flacon / Water in Bottle
+dialog{
+  id = "_item_description.bottle_2.2",
+  icon = 8,
+  skip = "all",
+  text = [[
+Your Magic Bottle
+is filled with
+water.
+Use it at an
+appropriate spot...
+]]
+}
+--------------------
+
+-- Potion rouge / Red potion
+dialog{
+  id = "_item_description.bottle_2.3",
+  icon = 9,
+  skip = "all",
+  text = [[
+Drink the Red Potion
+to fill up your
+Heart Meter.
+]]
+}
+--------------------
+
+-- Potion verte / Green potion
+dialog{
+  id = "_item_description.bottle_2.4",
+  icon = 10,
+  skip = "all",
+  text = [[
+Drink the Green Potion
+to fill up your
+Magic Meter.
+]]
+}
+--------------------
+
+-- Potion bleue / Blue potion
+dialog{
+  id = "_item_description.bottle_2.5",
+  icon = 11,
+  skip = "all",
+  text = [[
+Drink the Blue Potion
+to fill up both your
+Heart and Magic
+Meters!
+]]
+}
+--------------------
+
+-- Fée dans Flacon / Fairy in Bottle
+dialog{
+  id = "_item_description.bottle_2.6",
+  icon = 12,
+  skip = "all",
+  text = [[
+This Fairy will help
+you in time of need.
+You can also use it
+whenever you want to
+recover your Hearts!
+]]
+}
+--------------------
+
+-- Flacon Magique vide / Empty bottle
+dialog{
+  id = "_item_description.bottle_3.1",
+  icon = 7,
+  skip = "all",
+  text = [[
+The Magic Bottle can
+hold various
+substances.
+]]
+}
+--------------------
+
+-- Eau dans Flacon / Water in Bottle
+dialog{
+  id = "_item_description.bottle_3.2",
+  icon = 8,
+  skip = "all",
+  text = [[
+Your Magic Bottle
+is filled with
+water.
+Use it at an
+appropriate spot...
+]]
+}
+--------------------
+
+-- Potion rouge / Red potion
+dialog{
+  id = "_item_description.bottle_3.3",
+  icon = 9,
+  skip = "all",
+  text = [[
+Drink the Red Potion
+to fill up your
+Heart Meter.
+]]
+}
+--------------------
+
+-- Potion verte / Green potion
+dialog{
+  id = "_item_description.bottle_3.4",
+  icon = 10,
+  skip = "all",
+  text = [[
+Drink the Green Potion
+to fill up your
+Magic Meter.
+]]
+}
+--------------------
+
+-- Potion bleue / Blue potion
+dialog{
+  id = "_item_description.bottle_3.5",
+  icon = 11,
+  skip = "all",
+  text = [[
+Drink the Blue Potion
+to fill up both your
+Heart and Magic
+Meters!
+]]
+}
+--------------------
+
+-- Fée dans Flacon / Fairy in Bottle
+dialog{
+  id = "_item_description.bottle_3.6",
+  icon = 12,
+  skip = "all",
+  text = [[
+This Fairy will help
+you in time of need.
+You can also use it
+whenever you want to
+recover your Hearts!
+]]
+}
+--------------------
+
+-- Flacon Magique vide / Empty bottle
+dialog{
+  id = "_item_description.bottle_4.1",
+  icon = 7,
+  skip = "all",
+  text = [[
+The Magic Bottle can
+hold various
+substances.
+]]
+}
+--------------------
+
+-- Eau dans Flacon / Water in Bottle
+dialog{
+  id = "_item_description.bottle_4.2",
+  icon = 8,
+  skip = "all",
+  text = [[
+Your Magic Bottle
+is filled with
+water.
+Use it at an
+appropriate spot...
+]]
+}
+--------------------
+
+-- Potion rouge / Red potion
+dialog{
+  id = "_item_description.bottle_4.3",
+  icon = 9,
+  skip = "all",
+  text = [[
+Drink the Red Potion
+to fill up your
+Heart Meter.
+]]
+}
+--------------------
+
+-- Potion verte / Red potion
+dialog{
+  id = "_item_description.bottle_4.4",
+  icon = 10,
+  skip = "all",
+  text = [[
+Drink the Green Potion
+to fill up your
+Magic Meter.
+]]
+}
+--------------------
+
+-- Potion bleue / Red potion
+dialog{
+  id = "_item_description.bottle_4.5",
+  icon = 11,
+  skip = "all",
+  text = [[
+Drink the Blue Potion
+to fill up both your
+Heart and Magic
+Meters!
+]]
+}
+--------------------
+
+-- Fée dans Flacon / Fairy in Bottle
+dialog{
+  id = "_item_description.bottle_4.6",
+  icon = 12,
+  skip = "all",
+  text = [[
+This Fairy will help
+you in time of need.
+You can also use it
+whenever you want to
+recover your Hearts!
+]]
+}
+--------------------
+
+-- Bottes de Pégase / Pegasus Shoes
+dialog{
+  id = "_item_description.pegasus_shoes.1",
+  icon = 13,
+  skip = "all",
+  text = [[
+Run as fast as
+lightning by using
+the Pegasus Shoes.
+Press and hold the
+Action key to run.
+]]
+}
+--------------------
+
+-- Miroir Mystique / Mystic Mirror
+dialog{
+  id = "_item_description.mystic_mirror.1",
+  icon = 14,
+  skip = "all",
+  text = [[
+The Mystic Mirror
+has strange
+powers...
+]]
+}
+--------------------
+
+-- Canne de Somaria / Cane of Somaria
+--#May need "blocks" or "a block"
+dialog{
+  id = "_item_description.cane_of_somaria.1",
+  icon = 15,
+  skip = "all",
+  next = "_warning_magic",
+  text = [[
+Create a block and
+hook yourself to it
+using the Hookshot.
+]]
+}
+--------------------
+
+-- Pommes / Apples
+dialog{
+  id = "_item_description.apples_counter.1",
+  icon = 16,
+  skip = "all",
+  text = [[
+Eat Apples to
+recover Hearts.
+]]
+}
+--------------------
+
+-- Pains au Chocolat / Chocolate Croissants
+dialog{
+  id = "_item_description.pains_au_chocolat_counter.1",
+  icon = 17,
+  skip = "all",
+  text = [[
+Eat a Chocolate
+Croissant to recover
+three Hearts.
+]]
+}
+--------------------
+
+-- Croissant / Croissant
+dialog{
+  id = "_item_description.croissants_counter.1",
+  icon = 18,
+  skip = "all",
+  text = [[
+Eat a Croissant to
+recover seven
+Hearts.
+]]
+}
+--------------------
+
+-- Clé de Roc / Rock Key
+dialog{
+  id = "_item_description.rock_key.1",
+  icon = 19,
+  skip = "all",
+  text = [[
+The Rock Key! But
+where is the right
+lock?
+]]
+}
+--------------------
+
+-- Clé d'Os / Bone Key
+dialog{
+  id = "_item_description.bone_key.1",
+  icon = 20,
+  skip = "all",
+  text = [[
+What could the Bone
+Key be used for?
+]]
+}
+--------------------
+
+-- Clé de Terre / Earth Key
+--#Check translation
+dialog{
+  id = "_item_description.clay_key.1",
+  icon = 21,
+  skip = "all",
+  text = [[
+The Earth Key. It
+allows access to the
+village's cave.
+]]
+}
+--------------------
+
+-- Tarte aux Pommes / Apple Pie
+dialog{
+  id = "_item_description.level_4_way.1",
+  icon = 22,
+  skip = "all",
+  text = [[
+This Apple Pie looks
+odd...
+]]
+}
+--------------------
+
+-- Lingots d'or / Gold bars
+dialog{
+  id = "_item_description.level_4_way.2",
+  icon = 23,
+  skip = "all",
+  text = [[
+Three authentic Gold
+Bars!
+]]
+}
+--------------------
+
+-- Edelweiss / Edelweiss
+dialog{
+  id = "_item_description.level_4_way.3",
+  icon = 24,
+  skip = "all",
+  text = [[
+The Edelweiss is a
+very rare flower in
+the Kingdom of
+Hyrule.
+]]
+}
+--------------------
+
+-- Précis d'escrime / Tiger scrolls
+dialog{
+  id = "_item_description.level_4_way.4",
+  icon = 25,
+  skip = "all",
+  text = [[
+These Tiger Scrolls
+will let you master
+advanced sword
+techniques.
+]]
+}
+--------------------
+
+-- Palmes / Flippers
+dialog{
+  id = "_item_description.flippers.1",
+  icon = 26,
+  skip = "all",
+  text = [[
+Swim in deep waters
+with these flippers.
+]]
+}
+--------------------
+
+-- Cape magique / Magic Cape
+dialog{
+  id = "_item_description.magic_cape.1",
+  icon = 27,
+  skip = "all",
+  text = [[
+The Magic Cape warns
+you when you are
+near a weak wall.
+]]
+}
+--------------------
+
+-- Clé de Fer / Iron Key
+dialog{
+  id = "_item_description.iron_key.1",
+  icon = 28,
+  skip = "all",
+  text = [[
+The Iron Key.
+Be sure to use it on
+the correct lock!
+]]
+}
+--------------------
+
+-- Clé de Pierre / Stone Key
+dialog{
+  id = "_item_description.stone_key.1",
+  icon = 29,
+  skip = "all",
+  text = [[
+The Stone Key!
+Let's find the right
+lock!
+]]
+}
+--------------------
+
+-- Clé de Bois / Wooden Key
+--#May need to be translated better
+dialog{
+  id = "_item_description.wooden_key.1",
+  icon = 30,
+  skip = "all",
+  text = [[
+The Wooden Key.
+There's only one
+lock for this key!
+]]
+}
+--------------------
+
+-- Clé de Glace / Ice Key
+dialog{
+  id = "_item_description.ice_key.1",
+  icon = 31,
+  skip = "all",
+  text = [[
+The Ice Key. You must
+find a frozen place for
+it to work!
 ]]
 }
 -----------------------
 
--- Sword 3
+-- Poigne de Fer / Iron Glove
+dialog{
+  id = "_item_description.glove.1",
+  icon = 32,
+  skip = "all",
+  text = [[
+These Iron Gloves
+will let you lift
+rocks.
+]]
+}
+--------------------
+
+-- Poigne d'Or / Golden Glove
+dialog{
+  id = "_item_description.glove.2",
+  icon = 33,
+  skip = "all",
+  text = [[
+Lift black rocks
+with these Golden
+Gloves.
+]]
+}
+--------------------
+
+-- Pierres de Feu / Fire Stones
+dialog{
+  id = "_item_description.fire_stones_counter.1",
+  icon = 34,
+  skip = "all",
+  text = [[
+Find all three Fire
+Stones and bring
+them to Inferno.
+]]
+}
+--------------------
+
+-- ---------------------
+-- When finding a treasure
+-- ---------------------
+--
+-- Messages shown below are seen when the player
+-- obtains a treasure, usually by opening a chest or by buying it from a
+-- merchant in a shop.
+--------------------
+
+-- Plume / Feather
+dialog{
+  id = "_treasure.feather.1",
+  icon = 0,
+  text = [[
+You found the
+Feather!$0 Use it to
+jump in place and
+over obstacles!
+]]
+}
+--------------------
+
+-- Arc seul / Bow alone
+dialog{
+  id = "_treasure.bow.1",
+  icon = 2,
+  text = [[
+You found the Bow!$0
+Find some Arrows and
+you will be able to
+defeat tough enemies
+from afar!
+]]
+}
+--------------------
+
+-- Arc & Flèches / Bow & Arrows
+--#Choose one
+dialog{
+  id = "_treasure.bow.2",
+  icon = 3,
+  text = [[
+You found the Bow!$0
+You can fight tough
+enemies from afar!
+]]
+}
+--------------------
+
+-- Boomerang
+dialog{
+  id = "_treasure.boomerang.1",
+  icon = 4,
+  text = [[
+You found the
+Boomerang!$0 You can
+immobilize enemies
+and pick up far-away
+objects.
+There are several
+ways of using it,
+it’s up to you to
+discover them all!
+]]
+}
+--------------------
+
+-- Super Boomerang
+--#Check for better word for "ancien"
+dialog{
+  id = "_treasure.boomerang.2",
+  icon = 35,
+  text = [[
+You found the
+Super Boomerang!$0
+
+It's faster and
+more powerful than
+the original!
+]]
+}
+--------------------
+
+-- Lanterne / Lamp
+dialog{
+  id = "_treasure.lamp.1",
+  icon = 5,
+  next = "_warning_magic",
+  text = [[
+You found the Lamp!$0
+Use it to brighten
+dark places and
+light torches.
+]]
+}
+--------------------
+
+-- Grappin / Hookshot
+dialog{
+  id = "_treasure.hookshot.1",
+  icon = 6,
+  text = [[
+You found the
+Hookshot!$0
+
+Immobilize your
+enemies and fling
+yourself to
+inaccessible places!
+]]
+}
+--------------------
+
+-- Flacon vide / empty Bottle
+dialog{
+  id = "_treasure.bottle_1.1",
+  icon = 7,
+  text = [[
+You found a
+Magic Bottle!$0
+
+Fill it with
+various substances.
+]]
+}
+--------------------
+
+-- Eau / Water
+dialog{
+  id = "_treasure.bottle_1.2",
+  icon = 8,
+  text = [[
+You filled your
+Magic Bottle with
+water!
+]]
+}
+--------------------
+
+-- Potion rouge / Red potion
+dialog{
+  id = "_treasure.bottle_1.3",
+  icon = 9,
+  text = [[
+You found a
+Red Potion!$0
+
+Drink it to recover
+your health.
+]]
+}
+--------------------
+
+-- Potion verte / Green potion
+dialog{
+  id = "_treasure.bottle_1.4",
+  icon = 10,
+  text = [[
+You found a
+Green Potion!$0
+
+Drink it to recover
+your magic energy.
+]]
+}
+--------------------
+
+-- Potion bleue / Blue potion
+dialog{
+  id = "_treasure.bottle_1.5",
+  icon = 11,
+  text = [[
+You found a
+Blue Potion!$0
+
+Drink it to fully
+restore both your
+health and magic!
+]]
+}
+--------------------
+
+-- Fée dans Flacon / Fairy in Bottle
+dialog{
+  id = "_treasure.bottle_1.6",
+  icon = 12,
+  skip = "all",
+  text = [[
+You captured a
+Fairy! It will help
+you in a time of
+need. You can also
+use it at any time
+to recover Hearts!
+]]
+}
+--------------------
+
+-- Flacon vide / Empty Flask
+dialog{
+  id = "_treasure.bottle_2.1",
+  icon = 7,
+  text = [[
+You found a
+Magic Bottle!$0
+
+Fill it with
+various substances.
+]]
+}
+--------------------
+
+-- Eau / Water
+dialog{
+  id = "_treasure.bottle_2.2",
+  icon = 8,
+  text = [[
+You filled your
+Magic Bottle with
+water!
+]]
+}
+--------------------
+
+-- Potion rouge / Red potion
+dialog{
+  id = "_treasure.bottle_2.3",
+  icon = 9,
+  text = [[
+You found a
+Red Potion!$0
+
+Drink it to recover
+your health.
+]]
+}
+--------------------
+
+-- Potion verte / Green potion
+dialog{
+  id = "_treasure.bottle_2.4",
+  icon = 10,
+  text = [[
+You found a
+Green Potion!$0
+
+Drink it to recover
+your magic energy.
+]]
+}
+--------------------
+
+-- Potion bleue / Blue potion
+dialog{
+  id = "_treasure.bottle_2.5",
+  icon = 11,
+  text = [[
+You found a
+Blue Potion!$0
+
+Drink it to fully
+restore both your
+health and magic!
+]]
+}
+
+--------------------
+
+-- Fée dans Flacon / Fairy in Bottle
+dialog{
+  id = "_treasure.bottle_2.6",
+  icon = 12,
+  skip = "all",
+  text = [[
+You captured a
+Fairy! It will help
+you in a time of
+need. You can also
+use it at any time
+to recover Hearts!
+]]
+}
+--------------------
+
+-- Flacon vide / Empty Flask
+dialog{
+  id = "_treasure.bottle_3.1",
+  icon = 7,
+  text = [[
+You found a
+Magic Bottle!$0
+
+Fill it with
+various substances.
+]]
+}
+--------------------
+
+-- Eau / Water
+dialog{
+  id = "_treasure.bottle_3.2",
+  icon = 8,
+  text = [[
+You filled your
+Magic Bottle with
+water!
+]]
+}
+--------------------
+
+-- Potion rouge / Red potion
+dialog{
+  id = "_treasure.bottle_3.3",
+  icon = 9,
+  text = [[
+You found a
+Red Potion!$0
+
+Drink it to recover
+your health.
+]]
+}
+--------------------
+
+-- Potion verte / Green potion
+dialog{
+  id = "_treasure.bottle_3.4",
+  icon = 10,
+  text = [[
+You found a
+Green Potion!$0
+
+Drink it to recover
+your magic energy.
+]]
+}
+--------------------
+
+-- Potion bleue / Blue potion
+dialog{
+  id = "_treasure.bottle_3.5",
+  icon = 11,
+  text = [[
+You found a
+Blue Potion!$0
+
+Drink it to fully
+restore both your
+health and magic!
+]]
+}
+--------------------
+
+-- Fée dans Flacon / Fairy in Bottle
+dialog{
+  id = "_treasure.bottle_3.6",
+  icon = 12,
+  skip = "all",
+  text = [[
+You captured a
+Fairy! It will help
+you in a time of
+need. You can also
+use it at any time
+to recover Hearts!
+]]
+}
+--------------------
+
+-- Flacon vide / Empty Flask
+dialog{
+  id = "_treasure.bottle_4.1",
+  icon = 7,
+  text = [[
+You found a
+Magic Bottle!$0
+
+Fill it with
+various substances.
+]]
+}
+--------------------
+
+-- Eau / Water
+dialog{
+  id = "_treasure.bottle_4.2",
+  icon = 8,
+  text = [[
+You filled your
+Magic Bottle with
+water!
+]]
+}
+--------------------
+
+-- Potion rouge / Red potion
+dialog{
+  id = "_treasure.bottle_4.3",
+  icon = 9,
+  text = [[
+You found a
+Red Potion!$0
+
+Drink it to recover
+your health.
+]]
+}
+--------------------
+
+-- Potion verte / Green potion
+dialog{
+  id = "_treasure.bottle_4.4",
+  icon = 10,
+  text = [[
+You found a
+Green Potion!$0
+
+Drink it to recover
+your magic energy.
+]]
+}
+--------------------
+
+-- Potion bleue / Blue potion
+dialog{
+  id = "_treasure.bottle_4.5",
+  icon = 11,
+  text = [[
+You found a
+Blue Potion!$0
+
+Drink it to fully
+restore both your
+health and magic!
+]]
+}
+--------------------
+
+-- Fée dans Flacon / Fairy in Bottle
+dialog{
+  id = "_treasure.bottle_4.6",
+  icon = 12,
+  skip = "all",
+  text = [[
+You captured a
+Fairy! It will help
+you in a time of
+need. You can also
+use it at any time
+to recover Hearts!
+]]
+}
+--------------------
+
+-- Bottes de Pégase / Pegasus Boots
+dialog{
+  id = "_treasure.pegasus_shoes.1",
+  icon = 13,
+  text = [[
+You found the
+Pegasus Shoes!$0
+
+Run and charge
+through the toughest
+enemies!
+Press and hold the
+Action key to use
+them.
+]]
+}
+--------------------
+
+-- Miroir Mystique / Mystic Mirror
+dialog{
+  id = "_treasure.mystic_mirror.1",
+  icon = 14,
+  text = [[
+You found the
+Mystic Mirror!$0
+
+Its strange powers
+will surely be of
+help in your quest.
+]]
+}
+--------------------
+
+-- Canne de Somaria / Cane of Somaria
+dialog{
+  id = "_treasure.cane_of_somaria.1",
+  icon = 15,
+  next = "_warning_magic",
+  text = [[
+You found the
+Cane of Somaria!$0
+You can create a
+block and grab onto
+it with the
+Hookshot.
+]]
+}
+--------------------
+
+-- 3 Pommes
+dialog{
+  id = "_treasure.apple.1",
+  icon = 16,
+  text = [[
+You found 3 Apples!$0
+Eat them later to
+recover Hearts!
+]]
+}
+--------------------
+
+-- 1 Pain au Chocolat
+dialog{
+  id = "_treasure.pain_au_chocolat.1",
+  icon = 17,
+  text = [[
+You found a
+Chocolate Croissant!$0
+
+Eat a Chocolate
+Croissant to recover
+some Hearts.
+]]
+}
+--------------------
+
+-- 1 Croissant
+dialog{
+  id = "_treasure.croissant.1",
+  icon = 18,
+  text = [[
+You found a
+Croissant!$0
+It's crispy! Eat a
+Croissant to recover
+Hearts.
+]]
+}
+--------------------
+
+-- Clé de Roc
+dialog{
+  id = "_treasure.rock_key.1",
+  icon = 19,
+  text = [[
+You found the Rock
+Key!$0
+]]
+}
+--------------------
+
+-- Clé d'os
+dialog{
+  id = "_treasure.bone_key.1",
+  icon = 20,
+  text = [[
+You found the Bone
+Key!$0
+
+But what could it be
+used for?
+]]
+}
+--------------------
+
+-- Clé de Terre
+dialog{
+  id = "_treasure.clay_key.1",
+  icon = 21,
+  text = [[
+You found the Earth
+Key!$0
+
+Now you can access
+the village's cave!
+]]
+}
+--------------------
+
+-- Tarte aux Pommes
+dialog{
+  id = "_treasure.level_4_way.1",
+  icon = 22,
+  text = [[
+You found an Apple
+Pie!$0
+$1...$3 Hmmm, I
+wouldn't eat it if
+I were you, it
+looks odd...
+]]
+}
+--------------------
+
+-- Lingots d'or
+dialog{
+  id = "_treasure.level_4_way.2",
+  icon = 23,
+  text = [[
+You found some
+Gold Bars!!!$0
+
+They shimmer and
+are very valuable!
+]]
+}
+--------------------
+
+-- Edelweiss
+dialog{
+  id = "_treasure.level_4_way.3",
+  icon = 24,
+  text = [[
+You found an
+Edelweiss!$0
+
+This pretty flower
+from Hyrule's
+mountains is
+extremely rare!
+]]
+}
+--------------------
+
+-- Précis d'escrime / Tiger Scrolls
+dialog{
+  id = "_treasure.level_4_way.4",
+  icon = 25,
+  text = [[
+You found the Tiger
+Scrolls!$0 You've now
+mastered the long
+forgotten Whirlwind
+Attack.
+]]
+}
+--------------------
+
+-- Palmes / Flippers
+dialog{
+  id = "_treasure.flippers.1",
+  icon = 26,
+  text = [[
+You found the
+Flippers!$0
+
+You can now swim
+in deep waters!
+]]
+}
+--------------------
+
+-- Cape Magique
+dialog{
+  id = "_treasure.magic_cape.1",
+  icon = 27,
+  text = [[
+You found the Magic
+Cape!$0
+
+It will warn you
+when you are near a
+weak wall.
+]]
+}
+--------------------
+
+-- Clé de Fer
+dialog{
+  id = "_treasure.iron_key.1",
+  icon = 28,
+  text = [[
+You found the Iron
+Key!$0
+
+Surely it must open
+a door!
+]]
+}
+--------------------
+
+-- Clé de Pierre
+dialog{
+  id = "_treasure.stone_key.1",
+  icon = 29,
+  text = [[
+You found the Stone
+Key!$0
+
+But where is the
+lock it opens?
+]]
+}
+--------------------
+
+-- Clé de Bois
+dialog{
+  id = "_treasure.wooden_key.1",
+  icon = 30,
+  text = [[
+You found the Wooden
+Key!$0
+
+You must find where
+to use it!
+]]
+}
+--------------------
+
+-- Clé de Glace
+dialog{
+  id = "_treasure.ice_key.1",
+  icon = 31,
+  text = [[
+You found the Ice
+Key!$0
+
+It must open the way
+to a frozen place...
+]]
+}
+--------------------
+
+-- Poigne de Fer / Iron Gloves
+dialog{
+  id = "_treasure.glove.1",
+  icon = 32,
+  text = [[
+You found the Iron
+Gloves!$0
+
+With these you can
+lift rocks.
+]]
+}
+--------------------
+
+-- Poigne d'Or / Golden Gloves
+--#Still sounds odd.
+dialog{
+  id = "_treasure.glove.2",
+  icon = 33,
+  text = [[
+You found the Golden
+Gloves!$0
+
+Now you can lift
+black rocks!
+]]
+}
+--------------------
+
+-- Pierre de Feu / Fire Stone
+dialog{
+  id = "_treasure.fire_stone.1",
+  icon = 34,
+  text = [[
+You found a
+Fire Stone!
+]]
+}
+--------------------
+
+-- Carte du Monde / World Map
+dialog{
+  id = "_treasure.world_map.1",
+  icon = 50,
+  text = [[
+You found the
+World Map!$0
+
+View it on the Map
+screen.
+]]
+}
+--------------------
+
+-- Grand sac de rubis / Big Wallet
+dialog{
+  id = "_treasure.rupee_bag.2",
+  icon = 52,
+  text = [[
+You found the
+Big Wallet!$0
+
+It can hold up to
+300 Rupees!
+]]
+}
+--------------------
+
+-- Sac de rubis géant / Giant Wallet
+dialog{
+  id = "_treasure.rupee_bag.3",
+  icon = 53,
+  text = [[
+You found the
+Giant Wallet!$0
+
+It can hold up to
+999 Rupees!
+]]
+}
+--------------------
+
+-- Petit sac de bombes / Small Bomb Bag
+--#Bomb away vs. bombs away
+dialog{
+  id = "_treasure.bomb_bag.1",
+  icon = 54,
+  text = [[
+You found the Bomb
+Bag!$0 It holds 10
+Bombs.
+Assign it to a key
+and bombs away!
+]]
+}
+--------------------
+
+-- Grand sac de bombes / Large Bomb Bag
+dialog{
+  id = "_treasure.bomb_bag.2",
+  icon = 55,
+  text = [[
+You found the Large
+Bomb Bag!$0
+
+It can hold up to 30
+Bombs instead of 10!
+]]
+}
+--------------------
+
+-- Sac de bombes géant / Giant Bomb Bag
+dialog{
+  id = "_treasure.bomb_bag.3",
+  icon = 56,
+  text = [[
+You found the Giant
+Bomb Bag!$0
+
+It can hold up to 99
+Bombs instead of 30!
+]]
+}
+--------------------
+
+-- Grand carquois / Large Quiver
+dialog{
+  id = "_treasure.quiver.2",
+  icon = 58,
+  text = [[
+You found the
+Large Quiver!$0
+
+It can hold up to
+30 Arrows instead of
+10!
+]]
+}
+--------------------
+
+-- Carquois géant / Giant Quiver
+dialog{
+  id = "_treasure.quiver.3",
+  icon = 59,
+  text = [[
+You found the
+Giant Quiver!$0
+
+It can hold up to
+99 Arrows instead of
+30!
+]]
+}
+--------------------
+
+-- Cotte de mailles bleue / Blue Mail
+dialog{
+  id = "_treasure.tunic.2",
+  icon = 61,
+  text = [[
+You found the
+Blue Mail!$0
+It reduces damage
+taken from enemies
+and protects you
+from freezing
+temperatures...
+]]
+}
+--------------------
+
+-- Cotte de mailles rouge / Red Mail
+dialog{
+  id = "_treasure.tunic.3",
+  icon = 62,
+  text = [[
+You found the
+Red Mail!$0
+
+It provides even
+better protection
+than the Blue Mail!
+]]
+}
+--------------------
+
+-- Bouclier / Shield
+dialog{
+  id = "_treasure.shield.1",
+  icon = 63,
+  text = [[
+You found the
+Shield!$0
+
+You can defend
+yourself from enemy
+attacks!
+]]
+}
+--------------------
+
+-- Bouclier de Feu / Fire Shield
+dialog{
+  id = "_treasure.shield.2",
+  icon = 64,
+  text = [[
+You found the
+Fire Shield!$0
+
+You are now
+protected from fire
+attacks!
+]]
+}
+--------------------
+
+-- Bouclier Miroir / Mirror Shield
+dialog{
+  id = "_treasure.shield.3",
+  icon = 65,
+  text = [[
+You found the
+Mirror Shield!$0
+
+You can now reflect
+lasers!
+]]
+}
+--------------------
+
+-- Epée 1 (Epée du courage) / First Sword
+dialog{
+  id = "_treasure.sword.1",
+  icon = 66,
+  text = [[
+You found the
+Sword of Courage!$0
+
+Use it to vanquish
+your enemies!
+]]
+}
+--------------------
+
+-- Epée 2 (Glaive Hylien) / Hylian Blade
+dialog{
+  id = "_treasure.sword.2",
+  icon = 67,
+  next = "_treasure.sword.2.1",
+  text = [[
+$1You found the
+Hylian Blade!$0$0$0
+This new sword
+]]
+}
+--------------------
+--#Previous one or last?
+
+dialog{
+  id = "_treasure.sword.2.1",
+  text = [[
+is twice as
+powerful as your
+old one!
+]]
+}
+-----------------------
+
+-- Epée 3 (Sabre du Héros) / Hero's Sword
 dialog{
   id = "_treasure.sword.3",
+  icon = 68,
+  next = "_treasure.sword.2.1",
   text = [[
-$1You found the Hero's Sword!
-This sword is twice as powerful as your old one!
+$1You found the
+Hero's Sword!$0$0$0
+This new blade
 ]]
 }
 --------------------
 
--- Sword 4
+-- Epée 4 (Lame Purificatrice) / Master Sword
 dialog{
   id = "_treasure.sword.4",
+  icon = 69,
   text = [[
-You found the Master Sword!
-The power of this ultimate sword is beyond
-anything you have ever seen!
+You found the
+Master Sword!$0
+The power of this
+ultimate sword is
+beyond anything you
+have ever seen!
 ]]
 }
 --------------------
 
--- -------------
--- Other dialogs
--- -------------
--- 
--- Other mandatory dialogs displayed by the engine
+-- Demi de magie / Half Magic Meter
+dialog{
+  id = "_treasure.magic_bar.2",
+  icon = 99,
+  text = [[
+You found the Half
+Magic Meter!$0
 
+Your Magic Meter
+just doubled!
+]]
+}
 --------------------
 
--- When the player opens an empty chest
+-- Carte / Map
+dialog{
+  id = "_treasure.map.1",
+  icon = 70,
+  text = [[
+You found the Map!
+Use it to see the
+dungeon's layout.
+]]
+}
+--------------------
+
+-- Boussole / Compass
+dialog{
+  id = "_treasure.compass.1",
+  icon = 71,
+  text = [[
+You found the
+Compass! Now you can
+see your position on
+the Map, the
+locations of chests,
+as well as the
+Boss's Lair! Now
+we're getting
+somewhere!
+]]
+}
+--------------------
+
+-- Petite clé / Small key
+dialog{
+  id = "_treasure.small_key.1",
+  icon = 72,
+  text = [[
+You found a Small
+Key!
+
+This key will open
+a locked door in
+this dungeon.
+]]
+}
+--------------------
+
+-- Grande Clé / Large Key
+dialog{
+  id = "_treasure.big_key.1",
+  icon = 73,
+  text = [[
+You found the Large
+Key!
+
+You can now open
+special doors and
+find new treasures!
+]]
+}
+--------------------
+
+-- Clé du Maître / Boss Key
+dialog{
+  id = "_treasure.boss_key.1",
+  icon = 74,
+  text = [[
+You found the Boss
+Key!
+
+Now you can enter
+the Boss's Lair!
+]]
+}
+--------------------
+
+-- Fragment de Coeur / Piece of Heart
+dialog{
+  id = "_treasure.piece_of_heart.1",
+  icon = 79,
+  text = [[
+You found a
+Piece of Heart!
+]]
+}
+--------------------
+
+-- Réceptacle de Coeur / Heart Container
+dialog{
+  id = "_treasure.heart_container.1",
+  icon = 80,
+  text = [[
+You found a Heart
+Container!
+
+Your Heart Meter
+increased by one!
+]]
+}
+--------------------
+
+-- 1 Bombe / 1 Bomb
+dialog{
+  id = "_treasure.bomb.1",
+  icon = 82,
+  next = "_treasure.bomb.1.1",
+  text = [[
+You found a Bomb!$0
+]]
+}
+--------------------
+
+dialog{
+  id = "_treasure.bomb.1.1",
+  text = [[
+Use a Bomb to make
+an enemy or obstacle
+explode.
+]]
+}
+--------------------
+
+-- 3 Bombes / 3 Bombs
+dialog{
+  id = "_treasure.bomb.2",
+  icon = 82,
+  next = "_treasure.bomb.1.1",
+  text = [[
+You found three
+Bombs!$0
+]]
+}
+--------------------
+
+-- 8 Bombes / 8 Bombs
+dialog{
+  id = "_treasure.bomb.3",
+  icon = 82,
+  next = "_treasure.bomb.1.1",
+  text = [[
+You found eight
+Bombs!$0
+]]
+}
+--------------------
+
+-- 1 Flèche / 1 Arrow
+dialog{
+  id = "_treasure.arrow.1",
+  icon = 83,
+  next = "_treasure.arrow.1.1",
+  text = [[
+You found an Arrow!$0
+Use the Bow and
+Arrows to defeat
+]]
+}
+--------------------
+
+dialog{
+  id = "_treasure.arrow.1.1",
+  text = [[
+tough enemies from
+afar.
+]]
+}
+--------------------
+
+-- 5 Flèches / 5 Arrows
+dialog{
+  id = "_treasure.arrow.2",
+  icon = 83,
+  next = "_treasure.arrow.1.1",
+  text = [[
+You found 5 Arrows!$0
+Use the Bow and
+Arrows to defeat
+]]
+}
+--------------------
+
+-- 10 Flèches / 10 Arrows
+dialog{
+  id = "_treasure.arrow.3",
+  icon = 83,
+  next = "_treasure.arrow.1.1",
+  text = [[
+You found 10 Arrows!$0
+Use the Bow and
+Arrows to defeat
+]]
+}
+--------------------
+
+-- 1 Coeur / 1 Heart
+dialog{
+  id = "_treasure.heart.1",
+  icon = 84,
+  text = [[
+You found a Heart!
+]]
+}
+--------------------
+
+-- Petite bouteille de magie / Magic Flask
+dialog{
+  id = "_treasure.magic_flask.1",
+  icon = 85,
+  text = [[
+You found a Small
+Magic Jar! Your
+Magic Meter is
+refilled a bit.
+]]
+}
+--------------------
+
+-- Grande bouteille de magie / Magic Jar
+dialog{
+  id = "_treasure.magic_flask.2",
+  icon = 86,
+  text = [[
+You found a Large
+Magic Jar! Your
+Magic Meter is
+greatly refilled.
+]]
+}
+--------------------
+
+-- 1 rubis vert / 1 green rupee
+dialog{
+  id = "_treasure.rupee.1",
+  icon = 90,
+  text = [[
+You found a
+Green Rupee!
+That's one Rupee!
+]]
+}
+--------------------
+
+-- 1 rubis bleu / 1 blue rupee
+dialog{
+  id = "_treasure.rupee.2",
+  icon = 91,
+  text = [[
+You found a
+Blue Rupee!
+That's 5 Rupees!
+]]
+}
+--------------------
+
+-- 1 rubis rouge / 1 red rupee
+dialog{
+  id = "_treasure.rupee.3",
+  icon = 92,
+  text = [[
+You found a
+Red Rupee!
+That's 20 Rupees!
+]]
+}
+--------------------
+
+-- 50 rubis / 50 rupees
+-- Remarque : clin d'oeil à Link's Awakening
+dialog{
+  id = "_treasure.rupee.4",
+  icon = 90,
+  text = [[
+You found 50 Rupees!
+Marvelous!
+]]
+}
+--------------------
+
+-- 100 rubis / 100 rupees
+-- Remarque : clin d'oeil à Link's Awakening
+dialog{
+  id = "_treasure.rupee.5",
+  icon = 90,
+  text = [[
+You found 100
+Rupees! Fantastic!
+]]
+}
+--------------------
+
+-- 300 rubis / 300 rupees
+-- Remarque : clin d'oeil à Link's Awakening
+dialog{
+  id = "_treasure.rupee.6",
+  icon = 90,
+  text = [[
+You found 300 Rupees!
+How wonderful!
+]]
+}
+--------------------
+
+-- Potion rouge / Red potion
+dialog{
+  id = "_treasure.red_potion.1",
+  icon = 96,
+  text = [[
+You found a
+Red Potion!$0
+
+Drink it to
+completely restore
+your life energy.
+]]
+}
+--------------------
+
+-- Potion verte / Green potion
+dialog{
+  id = "_treasure.green_potion.1",
+  icon = 97,
+  text = [[
+You found a
+Green Potion!$0
+
+Drink it to
+completely restore
+your magic energy.
+]]
+}
+--------------------
+
+-- Potion bleue / Blue potion
+dialog{
+  id = "_treasure.blue_potion.1",
+  icon = 98,
+  text = [[
+You found a
+Blue Potion!$0
+
+Drink it to restore
+both your life and
+magic energy.
+]]
+}
+--------------------
+
+-- ---------------
+-- Autres messages
+-- ---------------
+--
+-- Autres messages divers affichés par le moteur de jeu
+-- Affiché à la fin des dialogues expliquant
+-- que le joueur a obtenu un objet qui consomme
+-- de l'énergie magique (même message que dans ALTTP)
+dialog{
+  id = "_warning_magic",
+  text = [[
+Watch your Magic
+Meter!
+]]
+}
+--------------------
+
+-- Lorsqu'on ouvre un coffre vide
 dialog{
   id = "_empty_chest",
   text = [[
-This chest is empty! Too bad!
+This chest is empty!
+Too bad!
 ]]
 }
 -----------------------
 
--- Watching a shop treasure
--- (shown after reading the item's description)
+-- Lorsqu'on regarde une porte verrouillé ou un bloc verrouillé
+-- et qu'on ne possède pas de Petite Clé
+dialog{
+  id = "_small_key_required",
+  icon = 72,
+  skip = "all",
+  text = [[
+It's locked!
+]]
+}
+--------------------
+
+-- Lorsqu'on regarde le grand coffre ou une porte verrouillée nécessitant la Grande Clé
+-- et qu'on ne possède pas celle-ci
+dialog{
+  id = "_big_key_required",
+  icon = 73,
+  skip = "all",
+  text = [[
+Huh? It's locked!
+If you had the Large
+Key you might be
+able to open it!
+]]
+}
+--------------------
+
+-- Lorsqu'on regarde la porte du boss sans avoir la Clé du Maître
+dialog{
+  id = "_boss_key_required",
+  icon = 74,
+  skip = "all",
+  text = [[
+This door leads to
+the Boss's Lair!
+You will need the
+Boss Key to open it.
+]]
+}
+--------------------
+
+-- Lorsqu'on tente de soulever un buisson
+-- au lieu de le couper avec l'épée
+dialog{
+  id = "_cannot_lift_should_cut",
+  skip = "all",
+  text = [[
+You will need something
+sharp to cut through
+these bushes.
+]]
+}
+-----------------------
+
+-- Lorsqu'on tente de soulever une pierre
+-- sans avoir de bracelet de force
+-- (Clin d'oeil à Link's Awakening)
+dialog{
+  id = "_cannot_lift_too_heavy",
+  skip = "all",
+  text = [[
+Darn it, this is way
+too heavy!
+
+You'll never manage
+with your bare hands!
+]]
+}
+-----------------------
+
+-- Lorsqu'on tente de soulever une pierre vraiment lourde
+-- en ayant seulement la poigne de fer
+dialog{
+  id = "_cannot_lift_still_too_heavy",
+  skip = "all",
+  text = [[
+It's still too heavy
+for you!
+]]
+}
+-----------------------
+
+-- Lorsqu'on regarde un objet vendu dans un magasin
+-- (message affiché après avoir lu la description de l'objet)
 dialog{
   id = "_shop.question",
+  question = true,
   text = [[
 Price: $v Rupees.
 Buy
@@ -109,89 +2252,391 @@ Don't Buy
 }
 -----------------------
 
--- When the player wants to buy a shop treasure
--- but does not have enough money.
+-- Lorsqu'on veut acheter un objet dans un magasin
+-- mais qu'on n'a pas assez de Rubis
 dialog{
   id = "_shop.not_enough_money",
+  skip = "all",
   text = [[
-Sorry, you don't have enough Rupees!
+Sorry, you don't
+have enough Rupees!
 ]]
 }
 -----------------------
 
--- When the player wants to buy a shop treasure
--- but already have the maximum amount of the item.
+-- Lorsqu'on veut acheter un objet dans un magasin
+-- mais qu'on a déjà le maximum de la quantité possible
+-- (pour des Bombes, des Flèches, etc.)
 dialog{
   id = "_shop.amount_full",
   text = [[
-You can't carry any more!
+You can't carry any
+more!
 ]]
 }
 -----------------------
 
--- Watching a crystal.
+-- Lorsqu'on regarde un interrupteur de cristal
 dialog{
   id = "_crystal",
   skip = "all",
   text = [[
 It's a crystal switch.
-Try to hit it with something...
+Try to hit it with
+something...
 ]]
 }
 -----------------------
 
--- --------------------
--- Destructible objects
--- --------------------
---
--- Dialogs shown by destructible items.
-
-
--- Trying to lift a bush instead of cutting it with the sword.
+-- Lorsqu'on pénètre dans le donjon 1
 dialog{
-  id = "cannot_lift_should_cut",
+  id = "dungeon_1",
+  skip = "current",
   text = [[
-You will need something sharp to cut through
-these bushes.
+         Level 1
+      Forest Dungeon
 ]]
 }
 -----------------------
 
--- Trying to lift something too heavy.
+-- Lorsqu'on pénètre dans le donjon 2
 dialog{
-  id = "cannot_lift_too_heavy",
+  id = "dungeon_2",
+  skip = "current",
   text = [[
-Darn it, this is way too heavy!
-
-You'll never manage with your bare hands!
+         Level 2
+      Roc's Cavern
 ]]
 }
 -----------------------
 
--- Trying to lift something too heavy even for the first glove.
+-- Lorsqu'on pénètre dans le donjon 3
 dialog{
-  id = "cannot_lift_still_too_heavy",
+  id = "dungeon_3",
+  skip = "current",
+  text = [[
+         Level 3
+  Master Arbror's Den
+]]
+}
+-----------------------
+
+dialog{
+  id = "found_piece_of_heart.first",
+  icon = 75,
+  text = [[
+Collect four Pieces
+of Heart to obtain
+a new Heart.
+]]
+}
+--------------------
+
+dialog{
+  id = "found_piece_of_heart.second",
+  icon = 76,
+  text = [[
+Two more and you'll
+have another Heart.
+]]
+}
+--------------------
+
+dialog{
+  id = "found_piece_of_heart.third",
+  icon = 77,
+  text = [[
+Find one more and
+you will have
+another Heart!
+]]
+}
+--------------------
+
+dialog{
+  id = "found_piece_of_heart.fourth",
+  icon = 78,
+  text = [[
+You found four
+Pieces of Heart. You
+got an extra Heart!
+]]
+}
+--------------------
+
+-- Lorsqu'on trouve une Fée en ayant au moins un Flacon (même dialogue que dans ALTTP)
+dialog{
+  id = "found_fairy",
+  icon = 81,
+  skip = "current",
+  next = "found_fairy.1",
+  text = [[
+You found a Fairy,
+she's wonderful!
+]]
+}
+--------------------
+
+-- |--------------------___|
+dialog{
+  id = "found_fairy.1",
+  icon = -1,
+  question = true,
+  text = [[
+What do you want to do?
+Recover your health
+Keep it
+]]
+}
+--------------------
+
+-- Lorsqu'on veut conserver une Fée mais qu'on n'a pas de Flacon vide
+dialog{
+  id = "found_fairy.no_empty_bottle",
+  skip = "current",
+  text = [[
+You don't have an empty
+Bottle!
+]]
+}
+-----------------------
+
+-- Lorsqu'on trouve de l'eau et qu'on a un Flacon vide
+dialog{
+  id = "found_water",
+  icon = 8,
+  question = true,
+  text = [[
+Do you want to put
+some water in your
+
+Magic Bottle?
+Yes
+No
+]]
+}
+--------------------
+
+-- Lorsqu'on trouve de l'eau mais qu'on n'a aucun Flacon
+dialog{
+  id = "found_water.no_bottle",
   skip = "all",
   text = [[
-It's still too heavy for you!
+There is some water
+here, but you have no
+way of storing it...
 ]]
 }
 -----------------------
 
--- --------------------
--- System prompts
--- --------------------
---
--- Dialogs shown for game functions
-
-
--- Pause menu to save game
+-- Lorsqu'on trouve de l'eau et qu'on a au moins un Flacon, mais pas de Flacon vide
 dialog{
-  id = "pause.save",
+  id = "found_water.no_empty_bottle",
+  icon = 8,
+  skip = "all",
   text = [[
-Do you want to save your game?
-  $? Yes
-  $? No
+There is some water
+here, but you need
+an empty Magic
+Bottle to store
+it...
+]]
+}
+--------------------
+
+-- Utiliser un Flacon contenant de l'eau
+dialog{
+  id = "use_bottle_with_water",
+  icon = 8,
+  question = true,
+  text = [[
+Your Magic Bottle is
+filled with water.
+Do you want to pour
+it out?
+Pour water
+Keep it
+]]
+}
+--------------------
+
+-- Utiliser une Pomme
+dialog{
+  id = "use_apples",
+  icon = 16,
+  question = true,
+  text = [[
+Eating an apple will
+restore one Heart.
+What do you want to
+do?
+Eat an apple
+Nothing
+]]
+}
+--------------------
+
+-- Use a Chocolate Croissant
+dialog{
+  id = "use_pains_au_chocolat",
+  icon = 17,
+  question = true,
+  text = [[
+A Chocolate
+Croissant restores
+three hearts. What
+do you want to do?
+Eat one
+Nothing
+]]
+}
+--------------------
+
+-- Utiliser un Croissant
+dialog{
+  id = "use_croissants",
+  icon = 18,
+  question = true,
+  text = [[
+A Croissant restores
+seven hearts. What
+do you want to do?
+Eat one
+Nothing
+]]
+}
+--------------------
+
+dialog{
+  id = "torch.need_lamp",
+  skip = "all",
+  text = [[
+There must be a way to
+light this torch...
 ]]
 }
 -----------------------
+
+
+-- ****** Full specification of dialog properties ******
+
+-- We describe here the meaning of each dialog property.
+
+-- You will be interested in this documentation
+-- if you are modifying this quest or making a
+-- quest that uses the same dialog system.
+-- If you are only translating the quest,
+-- you must not change properties other than "text".
+
+-- Remember that properties "id" and "text" are the only ones
+-- imposed by the Solarus engine.
+-- All other properties are custom, they work with
+-- the specific dialog box system of Zelda Mystery of Solarus DX.
+-- In other words, the documentation below relates to Zelda Mystery of
+-- Solarus DX (or to any other quest that uses the same dialog box system),
+-- but not to all Solarus quests.
+
+-- In Zelda Mystery of Solarus DX, a dialog has the following properties:
+--
+-- - id (string): A name identifying the dialog.
+--   The id allows the engine and the scripts to refer to the dialog whenever they
+--   want to display it.
+--   If you are translating dialogs, you must never translate the id.
+--
+-- - text (multi-line string): Contents of this dialog.
+--   If you are translating dialogs, text is the only property to translate.
+--   The text has usually several lines.
+--   The text should be enclosed between [[ and ]], which is
+--   the notation for multiline strings.
+--   In the game, it will be displayed in groups of 3 lines because the dialog box
+--   has space for 3 lines. Each group of 3 lines is called a message.
+--   There is no automatic line breaking: you have to break your lines explicitly.
+--   A line shoud not exceed the maximum number of characters that fit in the
+--   dialog box. This limit depends on the font used.
+--   To make sure you don't exceed the limit, you
+--   should use a text editor with a fixed width font and that shows the column
+--   number.
+--   Hint: you can also put a special comment (outside the string!) whose only
+--   purpose is to show the maximum line size.
+--
+-- - skip (string, optional): Defines what happens when the player
+--   tries to skip the dialog (by pressing the attack command).
+--   There are three possible values:
+--   - "none" (default): The message cannot be skipped.
+--   - "current": If the command is pressed, the current group of 3 lines
+--     is immediately shown (instead of being displayed gradually, letter by
+--     letter).
+--     This allows to get to the next message faster.
+--   - "all": The whole dialog can be skipped.
+--     The dialog box is immediataly closed and
+--     the subsequent groups of 3 lines will not be displayed at all.
+--     Use this only for non-essential dialogs that can be read again later.
+--   The value of skip takes effect applies until the dialog box is closed.
+--
+-- - icon (number, optional): displays a small image of 16x16 pixels in the
+--   dialog box.
+--   The value is a number that identifies the position of the icon in the icon
+--   image file sprites/hud/dialog_icons.png.
+--   The icon (if any) is displayed on the left of the dialog.
+--   This takes space:
+--   when an icon is shown, the whole text is shifted of 32 pixels to the right
+--   in the dialog box. Therefore, there is less space for characters.
+--   The icon remains displayed in the next message, until its value
+--   is changed or the dialog box is closed. A value of -1
+--   means that you want to remove the icon.
+--
+-- - next (string, optional): Id of the next dialog to display.
+--   If this value is not set, the dialog box is closed
+--   when the current dialog finishes.
+--
+--   During the last message (group of 3 lines) of a dialog,
+--   if next is set, then an arrow is displayed on the
+--   bottom of the dialog box to indicate that there will
+--   be at least another message after this one.
+--   If next is not set, then this arrow is replaced
+--   by a square to indicate that this message is the last one.
+--   A message having a question (see below) is always displayed
+--   with an arrow.
+--
+--   Sometimes, even if a dialog is finished, you may
+--   want to show an arrow.
+--   This is typically the case when you know that another
+--   dialog will start immediately, but you don't know which one yet
+--   (a script will decide at the last moment). In this very specific
+--   case, you can set an empty string ("") as the value of next
+--   to indicate that the dialog will be followed by another one,
+--   unknown for now.
+--   This will display the arrow instead of the square, but everything
+--   else works exactly as if the value next was not set.
+--
+-- - question (boolean, optional): If set to true, the last message
+--   (group of 3 lines) of the dialog will be displayed as a question
+--   with two choices.
+--   The first line of the message is considered as the question
+--   and the two other lines are the two possible answers.
+--   A cursor lets the player choose its answer. The cursor takes space:
+--   when there is a question, the whole text is shifted of 32 pixels to the right
+--   in the dialog box. Therefore, there is less space for characters.
+--   It is possible to have both a question and an icon: in this case, you have
+--   even less space for the text.
+--
+-- - next2 (string, optional): If there is a question, you can define this
+--   value next2. next specifies the message to show when the first answer
+--   is selected. next2 specifies the message to show when the second answer
+--   is selected.
+--   As for next, if next2 is unspecified and the player chooses
+--   the second answer, the sequence stops and the dialog box is closed.
+--
+-- There exists special characters that you can put in the text of a
+-- dialog:
+-- - $0: Makes a break of one second in the letter scrolling.
+-- - $1: Sets the letter scrolling speed to slow.
+-- - $2: Sets the letter scrolling speed to medium.
+-- - $3: Sets the letter scrolling speed to fast (default).
+--   Note that the letter scrolling speed applies until the dialog box is closed.
+-- - $v: Inserts in the text some value that is only known at runtime
+--   (for example the player's name or some money reward won in a mini-game).
+--   The $v sequence is substituted by the appropriate value. The value
+--   has to be specified at runtime by the quest programmer using the Lua API
+--   (through the info parameter of game:start_dialog()).
+
